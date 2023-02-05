@@ -31,4 +31,7 @@
       border-radius: 4px;
       opacity: 1;
    }
+   .header__register:hover {
+      text-decoration: underline;
+   }
 }
