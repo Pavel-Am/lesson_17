@@ -1,0 +1,129 @@
+@import "reset.css";
+
+body {
+   font-family: 'Lato', sans-serif;
+   color: #424551;
+   /* font-size: 16px; */
+}
+
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   position: relative;
+   min-height: 100%;
+}
+
+.wrapper main {
+   flex: 1 1 auto;
+}
+
+/*======================== general ======================*/
+
+[class*="__container"] {
+   max-width: 1260px;
+   padding: 0px 15px; /*! отступы безопасности. Их сумму нужно добавить к общей длинне огр контейнера*/
+   margin: 0 auto;
+}
+
+/*======================= header =====================================*/
+
+.header {
+   position: fixed;
+   width: 100%;
+   z-index: 99;
+   padding: 20px 0;
+   background-color: #e2e0e0;
+}
+
+.header__container {
+   /* background-color: aqua; */
+   display: flex;
+   align-items: center;
+   gap: 60px;
+}
+
+.header__nav {
+   flex-grow: 1;
+}
+
+.header__list {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 40px;
+   row-gap: 5px;
+}
+
+.list-header__link {
+   font-weight: 700;
+   line-height: 1.2;
+   color: #424551;
+}
+.list-header__link:hover {
+   text-decoration: underline;
+}
+
+.header__action {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   flex-shrink: 0;
+   gap: 36px;
+}
+
+.header__register {
+   display: flex;
+   align-items: center;
+   font-weight: 700;
+   line-height: 1.2;
+   color: #424551;
+   gap: 8px;
+}
+.header__register::before {
+   content: "";
+   flex: 0 0 18px;
+   width: 18px;
+   height: 18px;
+   top: 0;
+   left: 0;
+   background: url('../img/header/icon.svg') left no-repeat;
+}
+
+@media (max-width: 1100px ) {
+   .header__container {
+      gap: 30px;
+   }
+   .header__list {
+      column-gap: 25px;
+   }
+}
+@media (max-width: 1035px) {
+   .header {
+      padding: 10px 0;
+   }
+   .header__container {
+      padding: 0 10px;
+   }
+   .header__action {
+      flex-direction: column-reverse;
+      flex: 0 0 auto;
+      gap: 20px;
+   }
+}
+@media (min-width: 768px) and (max-width: 800px) {
+   .header__list {
+      margin: 0 -10px;
+      column-gap: 0;
+      row-gap: 10px;
+   }
+   .list-header__column {
+      flex: 0 1 33.333%;
+      padding: 0 10px;
+   }
+   .list-header__item {
+      /* flex: 0 0 auto; */
+   }
+}
+
+/*======================= header =====================================*/
