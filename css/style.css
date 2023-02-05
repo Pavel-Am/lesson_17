@@ -109,6 +109,11 @@ body {
       gap: 10px;
    }
 }
+@media (max-width: 991.98px) {
+   .list-header__link {
+      text-decoration: underline;
+   }
+}
 @media (max-width: 940px) {
    .header__container {
       gap: 20px;
