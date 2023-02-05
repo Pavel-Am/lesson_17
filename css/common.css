@@ -25,8 +25,10 @@
    opacity: 0;
    transition: opacity 0.3s ease 0s;
 }
-.button:hover {
-   background: linear-gradient(55.95deg, #cf342e 0%, #cb4d05 100%);
-   border-radius: 4px;
-   opacity: 1;
+@media (hover: hover) {
+   .button:hover {
+      background: linear-gradient(55.95deg, #cf342e 0%, #cb4d05 100%);
+      border-radius: 4px;
+      opacity: 1;
+   }
 }
