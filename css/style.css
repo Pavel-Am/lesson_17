@@ -113,6 +113,9 @@ body {
    .list-header__link {
       text-decoration: underline;
    }
+   .header__register {
+      text-decoration: underline;
+   }
 }
 @media (max-width: 940px) {
    .header__container {
