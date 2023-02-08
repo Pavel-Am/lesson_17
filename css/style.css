@@ -85,7 +85,6 @@ body {
    gap: 8px;
    position: relative;
 }
-
 .header__register::before {
    content: "";
    flex: 0 0 18px;
@@ -120,9 +119,6 @@ body {
 @media (max-width: 1035px) {
    .header {
       padding: 10px 0;
-   }
-   .header__container {
-      padding: 0 10px;
    }
    .header__action {
       gap: 10px;
@@ -612,8 +608,6 @@ body {
 
 /*======================= Who we are ==================================*/
 
-.page__who {}
-
 .who-page {
    padding: 183px 0px 88px 0px;
 }
@@ -638,7 +632,6 @@ max-width: 705px;
    margin: 0px 0px 40px 0px;
 }
 
-.heder-block {}
 .heder-block__subtitle {
    font-weight: 700;
    line-height: 1.5;
@@ -732,7 +725,6 @@ max-width: 705px;
       padding: 0px 0px 0px 0px;
       row-gap: 8px;
    }
-   
    .list__item {
       line-height: 1.5;
       column-gap: 8px;
@@ -932,7 +924,6 @@ max-width: 705px;
    line-height: 1.5;
    text-align: center;
    color: #424551;
-   /* padding: 164px 74px 196px; */
 }
 .card__text {
    flex: 1 1 auto;
