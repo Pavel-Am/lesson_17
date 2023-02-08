@@ -59,7 +59,7 @@
    .header__register:hover::after {
       width: 100%;
    }
-   /*---------------------------------------------*/
+/*---------------------------------------------*/
 
    .content-main__play:hover:after {
       animation-play-state: paused;
@@ -69,4 +69,9 @@
       border: 1px solid #FF3F3A;
       background-color: #FF3F3A;
       }
+/*---------------------------------------------*/
+
+   .card__link:hover {
+      color: #FF3F3A;
+   }
 }
